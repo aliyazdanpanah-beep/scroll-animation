@@ -1,0 +1,29 @@
+* {
+     box-sizing: border-box;
+ }
+ 
+ body {
+     margin: 0;
+     font-family: Arial, sans-serif;
+ }
+ 
+ .section {
+     height: 100vh; /* Full height of the viewport */
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     font-size: 2em;
+     opacity: 0; /* Start hidden */
+     transform: translateY(50px); /* Start slightly lower */
+     transition: opacity 0.5s ease, transform 0.5s ease; /* Transition for fade and rise */
+ }
+ 
+ .visible {
+     opacity: 1; /* Fully visible */
+     transform: translateY(0); /* Move to original position */
+ }
+ 
+ #section1 { background-color: #f1c40f; }
+ #section2 { background-color: #e67e22; }
+ #section3 { background-color: #e74c3c; }
+ #section4 { background-color: #3498db; }
